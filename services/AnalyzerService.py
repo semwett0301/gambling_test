@@ -1,6 +1,6 @@
 from typing import Optional
 
-from analyzer_listeners.AnalyzerListenerInterface import AnalyzerListenerInterface
+from listeners.AnalyzerListenerInterface import AnalyzerListenerInterface
 from dto.AnalyzeReport import AnalyzeReport, AnalyzeReportRequired
 from readers.ReadersInterface import ReaderInterface
 from utils.CvUtils import CvUtils

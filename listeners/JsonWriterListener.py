@@ -1,6 +1,6 @@
 import json
 
-from analyzer_listeners.AnalyzerListenerInterface import AnalyzerListenerInterface
+from listeners.AnalyzerListenerInterface import AnalyzerListenerInterface
 from dto.AnalyzeReport import AnalyzeReportRequired
 
 class AnalyzerWriterListener(AnalyzerListenerInterface):

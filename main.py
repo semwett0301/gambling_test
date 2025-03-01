@@ -1,7 +1,7 @@
 import os
 
 import settings
-from analyzer_listeners.JsonWriterListener import AnalyzerWriterListener
+from listeners.JsonWriterListener import AnalyzerWriterListener
 from readers.MockReader import MockReader
 from readers.ScreenshotReader import ScreenshotReader
 from services.AnalyzerService import AnalyzerService
@@ -15,8 +15,8 @@ if __name__ == "__main__":
     os.system(f"touch {settings.JSON_PATH}")
 
     # Reader define
-    reader = MockReader("./data/screenshots/2025-03-01_21-53-49")
-    # reader = ScreenshotReader()
+    # reader = MockReader("./data/screenshots/2025-03-01_21-53-49")
+    reader = ScreenshotReader()
 
     # Create analyzer with reader and listeners
     analyzer_service = AnalyzerService(reader)
